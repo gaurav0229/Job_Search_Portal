@@ -25,7 +25,6 @@ import { useState } from 'react';
 // import './Moderator.css'
 import { Button } from '../components/Button'
 import '../components/Button.css'
-import EmployerHomePage1 from './EmployerHomePage1'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 
@@ -35,75 +34,101 @@ let Moderator = () => {
     const [modList, setModList] = useState([]); // from axios
     
     return (
-        <div className="container-fluid">
+        <div className="container" style={{backgroundColor:"#f7c586"}}>
            
-           <Carousel>
+           <Carousel style={{innerHeight: "-35px"}}>
                 <div>
-                    <img src={"./img1.jpg"} />
-                    <p className="legend">We Are Hiring</p>
+                    <img src={"./img3.jpg"} />
+                    <p className="legend">Get Ready For Job</p>
                 </div>
                 <div>
                     <img src={"./img2.jpg"} />
-                    <p className="legend">Legend 2</p>
+                    <p className="legend">Search job as Per your Interest</p>
                 </div>
                 <div>
-                    <img src="assets/3.jpeg" />
-                    <p className="legend">Legend 3</p>
+                    <img src={"./img1.jpg"} />
+                    <p className="legend">We are Hiring</p>
                 </div>
             </Carousel>
+             <h1  >Welcome to, Get Hired </h1> 
 
-            <h1  style={{backgroundColor: "red"}} >Welcome to, Get Hired </h1>
-           
-            
-     
-  <div className='hero-container  container-fluid'>
-  <h1>Want  job ? #Achive you Dream's </h1>
-  <p>Lets do it.</p>
-  <div className='hero-btns'>
-
-
-<div className='container '>
-    <h2><b>Hiring and Onboarding ,</b> </h2>
-    <br/>
-   <h5>Post a job to top job boards and social media sites in one click,<br/>
-    send interview requests and quickly find the perfect fit for you position.
-  </h5>
-  </div>
-<br/>
-
-
+            <div class="row" >
+  <div class="col-sm-6">
+    <div class="card" >
+      <div class="card-body">
+        <h5 class="card-title">Capgemini</h5>
+        <p class="card-text">Media and graphic Designer<br/>
+        Experience- 1 to 4 year<br/>
+        Location : Banglore</p>
+        <a href="#" class="btn btn-primary">Apply</a>
+      </div>
     </div>
-
-    </div>
-    <div className='container '>
-   <div>  <EmployerHomePage1/> </div>
-    </div>
-
-
-    
-  <div className="card">
-  <div className="card-header">
-  <b>JobSeeker And Employer</b>  
   </div>
-  <div className="card-body">
-    <h5 className="card-title">More JOb Opportunity</h5>
-    <p className="card-text">With Get Hired , try it Like  it !!!!</p>
-    <a href="#" class="btn btn-primary">
-    For apply Register here</a>
-    
-    {/* <Link to="/register"><button>
-              Go to Page 2 
-            </button>
-            </Link> */}
-
-
+  <div class="col-sm-6">
+    <div class="card">
+    <div class="card-body">
+        <h5 class="card-title">Infosys</h5>
+        <p class="card-text">Software Developer<br/>
+        Experience- 0 to 1 year<br/>
+        Location : Pune</p>
+        <a href="#" class="btn btn-primary">Apply</a>
+      </div>
+    </div>
   </div>
-
+</div>
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+    <div class="card-body">
+        <h5 class="card-title">Tcs</h5>
+        <p class="card-text">Sql Developer<br/>
+        Experience- 2  year<br/>
+        Location : Mumbai</p>
+        <a href="#" class="btn btn-primary">Apply</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+    <div class="card-body">
+        <h5 class="card-title">Accenture</h5>
+        <p class="card-text">App Developer<br/>
+        Experience- 1 year<br/>
+        Location : Chennai</p>
+        <a href="#" class="btn btn-primary">Apply</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+    <div class="card-body">
+        <h5 class="card-title">Cognizant</h5>
+        <p class="card-text">Java Full Stack Developer<br/>
+        Experience- 1 to 2 year<br/>
+        Location : Pune</p>
+        <a href="#" class="btn btn-primary">Apply</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+    <div class="card-body">
+        <h5 class="card-title">ThinkTech Opc Cloud pvt. ltd</h5>
+        <p class="card-text">FrontEnd Developer<br/>
+        Experience- 1 year<br/>
+        Location : Pune</p>
+        <a href="#" class="btn btn-primary">Apply</a>
+      </div>
+    </div>
+  </div>
 </div>
 
 
+  </div>
 
-    </div>
+
 
 
  
@@ -127,50 +152,3 @@ export default Moderator;
 
 
 
-// import React from 'react';
-// import { useState, useEffect } from 'react';
-// import ModeratorJava from './ModeratorJava';
-// // import Counter from './Counter';
-
-// //**FUNCTION COMPONANT**
-
-// let Moderator = () => {
-//     const [mod, setMod] = useState('');
-//     const [parentMod, setParentMod] = useState({}); // parent state  
-//     const [parentModHike, setParentModHke] = useState(0); // parent state  
-//     // const [childEmp, setChildEmp] = useState({}); // from callback    
-
-//     useEffect(() => {
-
-//         setParentMod({
-//             mid: 201,
-//             mname: 'Monu',
-//             memail: 'monu@gmail.com'
-//         }
-//         );
-
-//         setParentModHke(10);
-//     }, []);
-
-//     // const handleCallback = (childEmpData) => {
-//     //     setChildEmp(childEmpData);
-//     //     console.log(childEmpData);
-//     // }
-
-//     return (
-//         <div>
-//             <h1 >Moderator Component</h1>
-//             <p> parent {parentMod.mname}</p>
-//             <p> parent {parentModHike}</p>
-//             {/* <JavaData></JavaData> */}
-//             {/* <p>parent {childEmp.name}</p> */}
-//             <ModeratorJava
-//                 parentMod={parentMod}
-//                 parentModHike={parentModHike}
-//                 // parentCallback={handleCallback}
-//             ></ModeratorJava>
-//             {/* <Counter></Counter> */}
-//         </div>
-//     )
-// }
-// export default Moderator;
