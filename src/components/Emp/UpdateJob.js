@@ -244,30 +244,28 @@ class Updatejob extends PureComponent {
                                 <form>
                                     <div className="form-group">
                                         <label>Job Title</label>
-                                        <input placeholder="Job title" className="form-control" name="jobTitle"
+                                        <input placeholder="Ex. Software Developer" className="form-control" name="jobTitle"
                                             value={this.state.jobTitle} onChange={this.changejobTitleHandler} />
                                             {this.state.jobTitleError}
 
                                       <label>Job Desc</label>
-                                    </div>
-                                    <div className="form-group">
                                         <label>Job Desc</label>
-                                        <textarea placeholder="Job desc" className="form-control" name="jobDesc"
+                                        <textarea placeholder="Job Description" className="form-control" name="jobDesc"
                                             value={this.state.jobDesc} onChange={this.changejobDescHandler} />
                                             {this.state.jobDescError}
 
                                         <label>Experience</label>
-                                        <input placeholder="Job Exp" className="form-control" name="jobExp"
+                                        <input placeholder="Ex. 1 yr" className="form-control" name="jobExp"
                                             value={this.state.jobExp} onChange={this.changejobExpHandler} />
                                             {this.state.jobExpError}
 
                                         <label>Salary</label>
-                                        <input placeholder="Job Salary" className="form-control" name="jobSal"
+                                        <input placeholder="Ex.4 lpa" className="form-control" name="jobSal"
                                             value={this.state.jobSal} onChange={this.changejobSalHandler} />
                                             {this.state.jobSalError}
 
                                         <label>Location</label>
-                                        <input placeholder="Job Location" className="form-control" name="jobLocation"
+                                        <input placeholder="Ex. Pune" className="form-control" name="jobLocation"
                                             value={this.state.jobLocation} onChange={this.changejobLocationHandler} />
                                             {this.state.jobLocationError}
 {/* 
