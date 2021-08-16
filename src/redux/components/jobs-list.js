@@ -166,7 +166,7 @@ class JobsList extends Component {
                 </Link>
 
                 <Link
-                  to={"/jobs/" + currentJob.jobTitle}
+                  to={"/addtocart/" + currentJob.jobId}//add to basket
                   className="badge badge-success"
                 >
                   Add to Basket

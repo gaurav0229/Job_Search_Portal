@@ -21,6 +21,18 @@ class JobDataService {
   findByjobId(jobId) {
     return http.get(`/api/getjobbyjobid/${jobId}`, { headers: authHeader() });
   }
+  
+  AddToCart(job,jobId){
+    return http.get(`/api/addJobInBasket/${jobId}`,{ headers: authHeader() });
+  }
+   
+  viewCart(){
+    return http.get(`/api/viewJobBasket`,{ headers: authHeader() });
+  }
+
+  removeJob(job, jobId){
+    return http.get(`/api/deleteFromBasket/${jobId}`,{ headers: authHeader() });
+  }
 }
 
 export default new JobDataService();
