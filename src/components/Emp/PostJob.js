@@ -219,17 +219,17 @@ class PostJob extends PureComponent {
                                 <form>
                                     <div className="form-group">
                                         <label>Job Title</label>
-                                        <input placeholder="Job title" className="form-control" name="jobTitle"
+                                        <input placeholder="Ex. Software Developer" className="form-control" name="jobTitle"
                                             value={this.state.jobTitle} onChange={this.changejobTitleHandler} />
                                             {this.state.jobTitleError}
 
                                         <label>Job Description</label>
-                                        <textarea placeholder="Job desc" className="form-control" name="jobDesc"
+                                        <textarea placeholder="Job Description" className="form-control" name="jobDesc"
                                             value={this.state.jobDesc} onChange={this.changejobDescHandler} />
                                             {this.state.jobDescError}
 
                                         <label>Experience</label>
-                                        <input placeholder="Job Exp" className="form-control" name="jobExp"
+                                        <input placeholder="Ex. 1 yr" className="form-control" name="jobExp"
                                             value={this.state.jobExp} onChange={this.changejobExpHandler} />
                                             {this.state.jobExpError}
 
@@ -239,7 +239,7 @@ class PostJob extends PureComponent {
                                             {this.state.jobSalError}
 
                                         <label>Location</label>
-                                        <input placeholder="Job Location" className="form-control" name="jobLocation"
+                                        <input placeholder="Ex. Pune" className="form-control" name="jobLocation"
                                             value={this.state.jobLocation} onChange={this.changejobLocationHandler} />
                                             {this.state.jobLocationError}
 
@@ -256,7 +256,7 @@ class PostJob extends PureComponent {
 
 
                                         <label>Employer Email</label>
-                                        <input placeholder="Employer Email" className="form-control" name="employer email"
+                                        <input placeholder="Ex. abc@gmail.com" className="form-control" name="employer email"
                                             value={this.state.empEmail} onChange={this.changeempEmailHandler} />
                                             {this.state.empEmailError}
 
@@ -270,7 +270,7 @@ class PostJob extends PureComponent {
                                         </select>
 
                                         <label>Skills</label>
-                                        <input placeholder="Skills" className="form-control" name="jobSkillSet"
+                                        <input placeholder="Ex. Java , Python" className="form-control" name="jobSkillSet"
                                             value={this.state.jobSkillSet} onChange={this.changejobSkillSetHandler} />
                                             {this.state.jobSkillSetError}
 
