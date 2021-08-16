@@ -30,7 +30,7 @@ class Updatejob extends PureComponent {
             disabled:false
 
         }
-        // this.changejobTitleHandler = this.changejobTitleHandler.bind(this);
+        this.changejobTitleHandler = this.changejobTitleHandler.bind(this);
         this.changejobDescHandler = this.changejobDescHandler.bind(this);
         this.changejobExpHandler =this.changejobExpHandler.bind(this);
         this.changejobSalHandler =this.changejobSalHandler.bind(this);
@@ -249,6 +249,9 @@ class Updatejob extends PureComponent {
                                             {this.state.jobTitleError}
 
                                       <label>Job Desc</label>
+                                    </div>
+                                    <div className="form-group">
+                                        <label>Job Desc</label>
                                         <textarea placeholder="Job desc" className="form-control" name="jobDesc"
                                             value={this.state.jobDesc} onChange={this.changejobDescHandler} />
                                             {this.state.jobDescError}
@@ -286,6 +289,9 @@ class Updatejob extends PureComponent {
                                             {this.state.empEmailError}
 
                                         {/* <label>Job status</label>
+                                    </div>
+                                    <div className="form-group">
+                                        <label>Job status</label>
                                         <input placeholder="Job Status" className="form-control" name="Job status"
                                             value={this.state.jobStatus} onChange={this.changejobStatusHandler} />
                                             {this.state.jobStatusError} */}
