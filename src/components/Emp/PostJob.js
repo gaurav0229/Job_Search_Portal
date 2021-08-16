@@ -1,7 +1,24 @@
 import React, { PureComponent } from 'react'
+// import React , {useState} from 'react';
 import employerservice from '../../services/employerservice';
+import 'bootstrap/dist/css/bootstrap.css';
+import {Multiselect} from 'multiselect-react-dropdown'
+import DropdownMultiselect from "react-multiselect-dropdown-bootstrap";
+
+
+
+// const option=[
+//     {id='1',name:'gaurav'},
+//     {id='2',name:'gaurav'},
+//     {id='3',name:'gaurav'},
+//     {id='4',name:'gaurav'}
+// ]
+// const [data,setdata] = useState(option);
 
 class PostJob extends PureComponent {
+    
+  
+
     constructor(props) {
         super(props)
 
@@ -89,6 +106,9 @@ class PostJob extends PureComponent {
     render() {
         return (
             <div>
+                {/* <Multiselect
+                option={data}
+                displayValue="name" /> */}
                 <div className="container">
                     <div className="row">
                         <div className="card col-md-6 offset-md-3">
@@ -142,7 +162,15 @@ class PostJob extends PureComponent {
                                         <label>Skills</label>
                                         <input placeholder="Skills" className="form-control" name="jobSkillSet"
                                             value={this.state.jobSkillSet} onChange={this.changejobSkillSetHandler} />
-<br/>
+                                            <br/>
+
+                                            {/* <label>Skills</label>
+                                            <DropdownMultiselect className="form-control" name="jobSkillSet" placeholder="Skills" value={this.state.jobSkillSet} onChange={this.changejobSkillSetHandler}
+                                           options={["Java", "Python", "C", "C++", "AWS", "SQL"]}
+                                              name="countries"
+                                             />
+                                             <br/> */}
+
                                         <button className="btn btn-success" onClick={this.saveJob}>Save</button>
                                         <button className="btn btn-danger" onClick={this.cancel.bind(this)} style={{ marginLeft: "10px" }}>Cancel</button>
                                     </div>
