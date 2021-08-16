@@ -1,19 +1,74 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 import React, { PureComponent } from 'react'
-// import React , {useState} from 'react';
 import employerservice from '../../services/employerservice';
 import 'bootstrap/dist/css/bootstrap.css';
 import {Multiselect} from 'multiselect-react-dropdown'
 import DropdownMultiselect from "react-multiselect-dropdown-bootstrap";
 
 
-
-// const option=[
-//     {id='1',name:'gaurav'},
-//     {id='2',name:'gaurav'},
-//     {id='3',name:'gaurav'},
-//     {id='4',name:'gaurav'}
-// ]
-// const [data,setdata] = useState(option);
 
 class PostJob extends PureComponent {
     
@@ -148,9 +203,6 @@ class PostJob extends PureComponent {
                                         <input placeholder="abc@gmail.com" className="form-control" name="employer email"
                                             value={this.state.empEmail} onChange={this.changeempEmailHandler} />
 
-                                        {/* <label>JOb status</label>
-                                        <input placeholder="Job Status" className="form-control" name="Job status"
-                                            value={this.state.jobStatus} onChange={this.changejobStatusHandler} /> */}
                                         <label for="sel1">Job status</label>
                                         <select class="form-control" value={this.state.jobStatus} onChange={this.changejobStatusHandler} id="sel2">
                                             <option>Available</option>
