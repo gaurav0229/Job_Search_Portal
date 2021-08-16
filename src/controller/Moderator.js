@@ -41,9 +41,7 @@ let Moderator = () => {
                             <p class="card-text">Media and graphic Designer<br />
                                 Experience- 1 to 4 year<br />
                                 Location : Banglore</p>
-                                <button type="button" class="btn btn-outline-primary btn-sm"><Link to={"/Register"} className="nav-link">
-                                <b style={{color:"black"}}>Apply</b>
-                            </Link></button>
+                                
                         </div>
                     </div>
                 </div>
@@ -54,9 +52,7 @@ let Moderator = () => {
                             <p class="card-text">Software Developer<br />
                                 Experience- 0 to 1 year<br />
                                 Location : Pune</p>
-                                <button type="button" class="btn btn-outline-primary btn-sm"><Link to={"/Register"} className="nav-link">
-                                <b style={{color:"black"}}>Apply</b>
-                            </Link></button>
+                                
 
                         </div>
                     </div>
@@ -70,9 +66,7 @@ let Moderator = () => {
                             <p class="card-text">Sql Developer<br />
                                 Experience- 2  year<br />
                                 Location : Mumbai</p>
-                                <button type="button" class="btn btn-outline-primary btn-sm"><Link to={"/Register"} className="nav-link">
-                                <b style={{color:"black"}}>Apply</b>
-                            </Link></button>      </div>
+                                   </div>
                     </div>
                 </div>
                 <div class="col-sm-6">
@@ -82,9 +76,7 @@ let Moderator = () => {
                             <p class="card-text">App Developer<br />
                                 Experience- 1 year<br />
                                 Location : Chennai</p>
-                                <button type="button" class="btn btn-outline-primary btn-sm"><Link to={"/Register"} className="nav-link">
-                                <b style={{color:"black"}}>Apply</b>
-                            </Link></button>     </div>
+                                 </div>
                     </div>
                 </div>
             </div>
@@ -96,9 +88,7 @@ let Moderator = () => {
                             <p class="card-text">Java Full Stack Developer<br />
                                 Experience- 1 to 2 year<br />
                                 Location : Pune</p>
-                                <button type="button" class="btn btn-outline-primary btn-sm"><Link to={"/Register"} className="nav-link">
-                                <b style={{color:"black"}}>Apply</b>
-                            </Link></button>     </div>
+                                   </div>
                     </div>
                 </div>
                 <div class="col-sm-6">
@@ -108,9 +98,7 @@ let Moderator = () => {
                             <p class="card-text">FrontEnd Developer<br />
                                 Experience- 1 year<br />
                                 Location : Pune</p>
-                                <button type="button" class="btn btn-outline-primary btn-sm"><Link to={"/Register"} className="nav-link">
-                                <b style={{color:"black"}}>Apply</b>
-                            </Link></button>     </div>
+                                  </div>
                     </div>
                 </div>
  </div>

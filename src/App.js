@@ -89,11 +89,7 @@ class App extends Component {
                   Home
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link to={"/aboutus"} className="nav-link">
-                  About Us
-                </Link>
-              </li>
+              
               <li className="nav-item">
                 <Link to={"/contactUs"} className="nav-link">
                   Contact Us
