@@ -68,7 +68,7 @@ class JobsList2 extends Component {
                 onChange={this.onChangeSearchjobSkillSet}                          
               />
             
-              <div className="input-group-append">
+              {/* <div className="input-group-append">
                 <button
                   className="btn btn-outline-secondary"
                   type="button"
@@ -76,7 +76,7 @@ class JobsList2 extends Component {
                 >
                   Search
                 </button>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="col-md-6">
@@ -84,7 +84,7 @@ class JobsList2 extends Component {
   
             <ul className="list-group">
               {jobs &&
-                jobs.map((job, index) => (
+                jobs.filter(qae=>qae.jobSkillSet.toLowerCase().includes(searchjobSkillSet.toLowerCase())).map((job, index) => (
                   <li
                     className={
                       "list-group-item " +

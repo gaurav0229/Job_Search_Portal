@@ -68,7 +68,7 @@ class JobsList extends Component {
                 onChange={this.onChangeSearchjobTitle}                          
               />
             
-              <div className="input-group-append">
+              {/* <div className="input-group-append">
                 <button
                   className="btn btn-outline-secondary"
                   type="button"
@@ -76,7 +76,7 @@ class JobsList extends Component {
                 >
                   Search
                 </button>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="col-md-6">
@@ -84,7 +84,7 @@ class JobsList extends Component {
   
             <ul className="list-group">
               {jobs &&
-                jobs.map((job, index) => (
+                jobs.filter(qae=>qae.jobTitle.toLowerCase().includes(searchjobTitle.toLowerCase())).map((job, index) => (
                   <li
                     className={
                       "list-group-item " +
