@@ -49,7 +49,7 @@ export default class Profile extends Component {
           </h3>
         </header>
         <p>
-          <strong>Id:</strong>{" "}
+          <strong>Registration Id:</strong>{" "}
           {currentUser.id}
         </p>
         <p>
