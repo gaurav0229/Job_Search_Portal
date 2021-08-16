@@ -51,7 +51,7 @@ class App extends Component {
         showAdminBoard: user.roles.includes("ROLE_JOBSEEKER"),
       });
     }
-    
+
     EventBus.on("logout", () => {
       this.logOut();
     });
@@ -76,41 +76,41 @@ class App extends Component {
     return (
       <div>
         <nav className="navbar navbar-expand navbar-dark bg-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-          <Link to={"/"} className="navbar-brand">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <Link to={"/home"} className="navbar-brand">
             GetHired
           </Link>
           <div className="navbar-nav mr-auto collapse navbar-collapse">
             <ul class="navbar-nav justify-content-end">
-            <li className="nav-item">
-              <Link to={"/home"} className="nav-link">
-                Home
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to={"/aboutus"} className="nav-link">
-                About Us
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to={"/contactUs"} className="nav-link">
-                Contact Us
-              </Link>
-            </li>
-
-            
-
-            {showModeratorBoard && (
               <li className="nav-item">
-                <Link to={"/EmployerhomePage"} className="nav-link">
-                  Employer Board
+                <Link to={"/home"} className="nav-link">
+                  Home
                 </Link>
               </li>
-            )}
+              <li className="nav-item">
+                <Link to={"/aboutus"} className="nav-link">
+                  About Us
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link to={"/contactUs"} className="nav-link">
+                  Contact Us
+                </Link>
+              </li>
 
-            {/* {showModeratorBoard && (
+
+
+              {showModeratorBoard && (
+                <li className="nav-item">
+                  <Link to={"/EmployerhomePage"} className="nav-link">
+                    Employer Board
+                  </Link>
+                </li>
+              )}
+
+              {/* {showModeratorBoard && (
               <li className="nav-item">
                 <Link to={"/moddata"} className="nav-link">
                   EMployer Home Data
@@ -119,13 +119,13 @@ class App extends Component {
             )} */}
 
 
-            {showAdminBoard && (
-              <li className="nav-item">
-                <Link to={"/JobseekerHomePage"} className="nav-link">
-                  Jobseeker Board
-                </Link>
-              </li>
-            )}
+              {showAdminBoard && (
+                <li className="nav-item">
+                  <Link to={"/JobseekerHomePage"} className="nav-link">
+                    Jobseeker Board
+                  </Link>
+                </li>
+              )}
             </ul>
 
             {/* {currentUser && (
@@ -144,7 +144,7 @@ class App extends Component {
                   {currentUser.username}
                 </Link>
               </li>
-              
+
               <li className="nav-item">
                 <a href="/login" className="nav-link" onClick={this.logOut}>
                   LogOut
@@ -158,7 +158,7 @@ class App extends Component {
                   Login
                 </Link>
               </li>
-             
+
 
               <li className="nav-item">
                 <Link to={"/register"} className="nav-link">
@@ -167,7 +167,9 @@ class App extends Component {
               </li>
 
 
-              
+
+
+
               {/* <li className="nav-item">
                 <Link to={"/empHome"} className="nav-link">
                   Employer Home Page
@@ -189,7 +191,7 @@ class App extends Component {
             <Route path="/moddata" component={Moderator} />
             <Route path="/admin" component={BoardAdmin} />
             <Route path="/footer" component={Footer} />
-            <Route path="/EmployerhomePage" component={EmployerHomePage}/>
+            <Route path="/EmployerhomePage" component={EmployerHomePage} />
             <Route path="/postjob" component={PostJob}></Route>
             <Route path="/updatejob/:jobId" component={Updatejob}></Route>
             <Route path="/deletejob/:jobId" component={Deletejob}></Route>
@@ -201,8 +203,8 @@ class App extends Component {
           </Switch>
         </div>
 
-        { /*<AuthVerify logOut={this.logOut}/> */ }
-        <Footer/>
+        { /*<AuthVerify logOut={this.logOut}/> */}
+        <Footer />
 
       </div>
     );
