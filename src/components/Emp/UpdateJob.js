@@ -19,7 +19,7 @@ class Updatejob extends PureComponent {
             jobSkillSet:''
 
         }
-        // this.changejobTitleHandler = this.changejobTitleHandler.bind(this);
+        this.changejobTitleHandler = this.changejobTitleHandler.bind(this);
         this.changejobDescHandler = this.changejobDescHandler.bind(this);
         this.changejobExpHandler =this.changejobExpHandler.bind(this);
         this.changejobSalHandler =this.changejobSalHandler.bind(this);
@@ -123,7 +123,7 @@ class Updatejob extends PureComponent {
                                     <div className="form-group">
                                         <label>Job Title</label>
                                         <input placeholder="Job title" className="form-control" name="jobTitle"
-                                            value={this.state.jobTitle} disabled />
+                                            value={this.state.jobTitle} onChange={this.changejobTitleHandler} />
                                     </div>
                                     <div className="form-group">
                                         <label>Job Desc</label>
@@ -156,7 +156,7 @@ class Updatejob extends PureComponent {
                                             value={this.state.empEmail} onChange={this.changeempEmailHandler} />
                                     </div>
                                     <div className="form-group">
-                                        <label>JOb status</label>
+                                        <label>Job status</label>
                                         <input placeholder="Job Status" className="form-control" name="Job status"
                                             value={this.state.jobStatus} onChange={this.changejobStatusHandler} />
                                     </div>
