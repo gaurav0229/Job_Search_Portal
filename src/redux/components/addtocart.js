@@ -56,7 +56,7 @@ class Addtocart extends PureComponent {
         console.log('job=>' + JSON.stringify(job));
 
         JobDataService.AddToCart(job, this.state.jobId).then((res) => {
-            this.props.history.push("/JobseekerHomePage");//viewallinbasket=>basketjob
+            this.props.history.push("/JobseekerHomePage"); //viewallinbasket=>basketjob
             console.log("successfully completed");
         });
 
