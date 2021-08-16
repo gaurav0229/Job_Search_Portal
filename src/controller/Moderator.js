@@ -1,24 +1,3 @@
-// import React from 'react';
-// import { useState } from 'react';
-// import ModeratorJava from './ModeratorJava';
-// // import Counter from './Counter';
-
-// //**FUNCTION COMPONANT**
-
-// let Moderator = () => {
-//     const [modList, setModList] = useState([]); // from axios
-
-//     return (
-//         <div className="container-fluid" style={{backgroundColor: "red"}}>
-
-//             <h1 >HOME PAGE</h1>
-
-
-//         </div>
-//     )
-// }
-// export default Moderator;
-
 
 import React from 'react';
 import { useState } from 'react';
@@ -134,6 +113,8 @@ let Moderator = () => {
                             </Link></button>     </div>
                     </div>
                 </div>
+
+                
             </div>
 
 

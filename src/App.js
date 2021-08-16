@@ -99,10 +99,7 @@ class App extends Component {
                   Contact Us
                 </Link>
               </li>
-
-
-
-              {showModeratorBoard && (
+      {showModeratorBoard && (
                 <li className="nav-item">
                   <Link to={"/EmployerhomePage"} className="nav-link">
                     Employer Board
@@ -110,13 +107,7 @@ class App extends Component {
                 </li>
               )}
 
-              {/* {showModeratorBoard && (
-              <li className="nav-item">
-                <Link to={"/moddata"} className="nav-link">
-                  EMployer Home Data
-                </Link>
-              </li>
-            )} */}
+            
 
 
               {showAdminBoard && (
@@ -128,14 +119,9 @@ class App extends Component {
               )}
             </ul>
 
-            {/* {currentUser && (
-              <li className="nav-item">
-                <Link to={"/user"} className="nav-link">
-                  User
-                </Link>
-              </li>
-            )} */}
+          
           </div>
+          
 
           {currentUser ? (
             <div className="navbar-nav ml-auto">
@@ -167,19 +153,11 @@ class App extends Component {
               </li>
 
 
-
-
-
-              {/* <li className="nav-item">
-                <Link to={"/empHome"} className="nav-link">
-                  Employer Home Page
-                </Link>
-              </li> */}
-
             </div>
           )}
-        </nav>
 
+        </nav>
+        
         <div className="container mt-3">
           <Switch>
             <Route exact path={["/", "/home"]} component={Moderator} />
@@ -202,6 +180,7 @@ class App extends Component {
 
           </Switch>
         </div>
+       
 
         { /*<AuthVerify logOut={this.logOut}/> */}
         <Footer />
