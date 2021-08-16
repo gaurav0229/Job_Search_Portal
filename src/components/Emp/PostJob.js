@@ -101,8 +101,6 @@ class PostJob extends PureComponent {
         this.setState({ jobStatus: event.target.value });
     }
 
-
-
     render() {
         return (
             <div>
@@ -117,37 +115,37 @@ class PostJob extends PureComponent {
                                 <form>
                                     <div className="form-group">
                                         <label>Job Title</label>
-                                        <input placeholder="Job title" className="form-control" name="jobTitle"
+                                        <input placeholder="Ex. Software Developer" className="form-control" name="jobTitle"
                                             value={this.state.jobTitle} onChange={this.changejobTitleHandler} />
 
                                         <label>Job Description</label>
-                                        <textarea placeholder="Job desc" className="form-control" name="jobDesc"
+                                        <textarea placeholder="Job description" className="form-control" name="jobDesc"
                                             value={this.state.jobDesc} onChange={this.changejobDescHandler} />
 
                                         <label>Experience</label>
-                                        <input placeholder="Job Exp" className="form-control" name="jobExp"
+                                        <input placeholder="Ex. 1 yr" className="form-control" name="jobExp"
                                             value={this.state.jobExp} onChange={this.changejobExpHandler} />
 
                                         <label>Salary</label>
-                                        <input placeholder="Job Salary" className="form-control" name="jobSal"
+                                        <input placeholder="Ex.4 lpa" className="form-control" name="jobSal"
                                             value={this.state.jobSal} onChange={this.changejobSalHandler} />
 
                                         <label>Location</label>
-                                        <input placeholder="Job Location" className="form-control" name="jobLocation"
+                                        <input placeholder="Ex. Pune" className="form-control" name="jobLocation"
                                             value={this.state.jobLocation} onChange={this.changejobLocationHandler} />
 
                                         {/* <label>Notice Period</label>
                                         <input placeholder="Notice Period" className="form-control" name="jobSal"
                                             value={this.state.jobNoticePeriod} onChange={this.changejobNoticePeriodHandler} /> */}
                                         <label for="sel1">Notice Period</label>
-                                        <select class="form-control" value={this.state.jobNoticePeriod} onChange={this.changejobNoticePeriodHandler} id="sel1">
+                                        <select class="form-control" placeholder="In Months" value={this.state.jobNoticePeriod} onChange={this.changejobNoticePeriodHandler} id="sel1">
                                             <option>1 Month</option>
                                             <option>2 Months</option>
                                             <option>3 months</option>
                                         </select>
 
                                         <label>Employer Email</label>
-                                        <input placeholder="Employer Email" className="form-control" name="employer email"
+                                        <input placeholder="abc@gmail.com" className="form-control" name="employer email"
                                             value={this.state.empEmail} onChange={this.changeempEmailHandler} />
 
                                         {/* <label>JOb status</label>
@@ -160,7 +158,7 @@ class PostJob extends PureComponent {
                                         </select>
 
                                         <label>Skills</label>
-                                        <input placeholder="Skills" className="form-control" name="jobSkillSet"
+                                        <input placeholder="Ex. C , C++ , Java" className="form-control" name="jobSkillSet"
                                             value={this.state.jobSkillSet} onChange={this.changejobSkillSetHandler} />
                                             <br/>
 
