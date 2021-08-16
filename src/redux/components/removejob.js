@@ -39,14 +39,14 @@ class removejob extends PureComponent {
         console.log('job=>' + JSON.stringify(job));
     
         JobDataService.removeJob(job, this.state.jobId).then((res) => {
-          this.props.history.push("/JobseekerHomePage");
+          this.props.history.push("/viewcart");
           console.log("successfully completed");
         });
     
     
       }
       cancel() {
-        this.props.history.push('/JobseekerHomePage');
+        this.props.history.push('/viewcart');
       }
 
 
