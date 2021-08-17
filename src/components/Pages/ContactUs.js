@@ -25,7 +25,6 @@ export default class ContactUs extends PureComponent {
         this.changemobileHandler = this.changemobileHandler.bind(this);
         this.changeemailHandler =this.changeemailHandler.bind(this);
         this.changecommentHandler =this.changecommentHandler.bind(this);
-
         this.savemsg = this.savemsg.bind(this);
         this.validate = this.validate.bind(this);
     }
@@ -130,7 +129,7 @@ export default class ContactUs extends PureComponent {
                         <p><b>GetHired@gmail.com</b></p>
                     </div>
             
-                    <div className="col-sm-6 pb-5">
+                    <div className="col-sm-6 pb-5" style={{marginTop:"-55px"}}>
                         <div className="card">
                             <div className="card-body">
                                 <br />
